@@ -9,7 +9,8 @@
     use MicrosoftAzure\Storage\Blob\Models\PublicAccessType;    
 
       # Setup a specific instance of an Azure::Storage::Client
-      $connectionString = "DefaultEndpointsProtocol=https;AccountName=webappdicoding1;AccountKey=pJcprQGZzweHqbIfY75ZtG4GdhzFu0Bzws7cBx4wFOsfc3fQPQel025HLCWCf1twWpg2UytMV+vIAQfhUfK6hw==;EndpointSuffix=core.windows.net";
+      $connectionString = "DefaultEndpointsProtocol=https;AccountName=nickwebapp;AccountKey=cUyebkE3u4qhSKTA92L1YA5v/NpZ92mAuOtC57FG9q5S2tF3s6TeIxc/ImKPKm1ByU54tE97Lv6GtecGBnuQdg==;EndpointSuffix=core.windows.net";
+    
       // Create blob client.
       $blobClient = BlobRestProxy::createBlobService($connectionString);
       
@@ -77,12 +78,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Final Submission Azure Cloud</title>
+    <title>Sub 2 Azure</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
       <div class="container">
-        <p class="lead">Upload Gambarnya yaa</p>
+        <p class="lead">Upload sebuah gambar!</p>
+        <a href="index.php">Kembali</a>
       </div>
     <div class="container container-fluid">
         <form action="" method="POST" enctype="multipart/form-data">
@@ -145,7 +147,7 @@
                 // **********************************************
         
                 // Replace <Subscription Key> with your valid subscription key.
-                var subscriptionKey = "928c028d357f49459fc5bd5bf09e65a0";
+                var subscriptionKey = "777d13a2da704f8e8eb1e2e89ecac591";
         
                 // You must use the same Azure region in your REST API method as you used to
                 // get your subscription keys. For example, if you got your subscription keys
@@ -155,7 +157,8 @@
                 // Free trial subscription keys are generated in the "westus" region.
                 // If you use a free trial subscription key, you shouldn't need to change
                 // this region.
-                var uriBase = "https://dicodingvision1.cognitiveservices.azure.com/vision/v2.0/analyze";
+                var uriBase =
+                    "https://nickvision.cognitiveservices.azure.com/vision/v2.0/analyze";
         
                 // Request parameters.
                 var params = {
